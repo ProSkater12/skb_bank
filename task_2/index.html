@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Test task</title>
+</head>
+
+<body>
+  <h3>Примеры преобразования:</h3>
+  <h5>(вывод в консоль)</h5>
+  <table border="1">
+    <tr>
+      <td>
+        XML в JSON
+      </td>
+      <td>
+        JSON в XML
+      </td>
+    </tr>
+    <tr>
+
+      <td>
+        <input type="button" value="Показать пример" onclick="console.log(expXml2Json); console.log('Тип примера: ' + typeof expXml2Json );"/>
+        <input type="button" value="Перевести в JSON" onclick="console.log(optionalXml2Json(expXml2Json)); console.log('Тип примера: ' + typeof optionalXml2Json(expXml2Json) );"/>
+      </td>
+      <td>
+        <input type="button" value="Показать пример" onclick="console.log(expJson2Xml); console.log('Тип примера: ' + typeof expJson2Xml );"/>
+        <input type="button" value="Перевести в XML" onclick="console.log(optionalJson2Xml(expJson2Xml))"/>
+      </td>
+
+    </tr>
+  </table>
+
+<script type="text/javascript" src="./scripts.js"></script>
+</body>
+
+<style>
+  TABLE {
+   width: 300px; /* Ширина таблицы */
+   border-collapse: collapse; /* Убираем двойные линии между ячейками */
+  }
+  TD, TH {
+   padding: 3px; /* Поля вокруг содержимого таблицы */
+   border: 1px solid black; /* Параметры рамки */
+  }
+</style>
+
+</html>
